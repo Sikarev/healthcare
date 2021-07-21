@@ -1,16 +1,18 @@
 <template>
-  <div id="nav"></div>
+  <div id="nav"><Menu /></div>
   <main-container />
   <router-view />
 </template>
 
 <script lang="ts">
 import MainContainer from "./views/MainContainer.vue";
+import Menu from "./components/Menu.vue";
 
 export default {
   name: "App",
   components: {
     MainContainer,
+    Menu,
   },
 };
 </script>
@@ -34,6 +36,6 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #409eff;
 }
 </style>
