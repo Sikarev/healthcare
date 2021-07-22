@@ -3,6 +3,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Login from "../views/Login.vue"
 import PatientRegistration from "../views/PatientRegistration.vue"
 import Portal from "../views/Portal.vue"
+import NotFound from "../views/NotFound.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -15,7 +16,11 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/portal',
-    component: Portal
+    component: Portal,
+  },
+  {
+    path: '/:catchAll(.*)',
+    component: NotFound
   }
 ];
 

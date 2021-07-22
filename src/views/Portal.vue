@@ -11,4 +11,9 @@ export default defineComponent({});
 </script>
 
 <style scoped>
+.portal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>
