@@ -1,5 +1,4 @@
 <template>
-  <div id="nav"><Menu /></div>
   <main-container />
   <router-view />
 </template>
